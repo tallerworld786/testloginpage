@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <title>Register</title>
+    <style>
+      body {
+        background-color: #0077b5;
+        direction: ltr;
+        line-height: 1.34;
+        margin: 0;
+        padding: 0;
+        unicode-bidi: embed;
+      }
+      .formm {
+        background-color: lavender;
+        color: #0077b5;
+        margin-left: 500px;
+        margin-right: auto;
+        margin-bottom: 100px;
+        width: 450px;
+        height: 550px;
+      }
+      .size {
+        text-align: center;
+        margin-top: 110px;
+        margin-left: 10px;
+      }
+      .login-form-container {
+        width: 396px;
+        margin-top: 10px;
+        text-align: center;
+        margin-left: 30px;
+      }
+      .btn-primary {
+        color: #ffffff;
+        margin-top: 10px;
+        margin-left: 25px;
+        margin-bottom: 30px;
+        width: 396px;
+        -moz-text-size-adjust: 125%;
+      }
+      .black {
+        color: black;
+        margin-top: 20px;
+        margin-left: 50px;
+        margin-right: 5px;
+      }
+      .small {
+        color: black;
+        margin-left: -325px;
+      }
+      .heading {
+        background-color: #0077b5;
+        color: #ffffff;
+      }
+      .space {
+        margin-left: 50px;
+      }
+      .form-control {
+        border: 0.75px solid black;
+        margin-bottom: 20px;
+        height: 30px;
+        width: 350px;
+      }
+      .home {
+        color: #ffffff;
+        margin-left: 650px;
+        margin-right: auto;
+      }
+      .white {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!--
+    <div>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+        <a class="navbar-brand" href="/login">OUR awesome Website</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="btn btn-secondary btn-lg" href="/login">Login</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>-->
+    <br />
+    <div class="home">
+      <a href="/login/home" class="white"> <h1>Home</h1></a>
+    </div>
+
+    <div class="formm">
+      <div class="heading">
+        <h2 class="space">Its Your Life Make It Large<br /><br /></h2>
+      </div>
+
+      <form method="post">
+        {% csrf_token %}
+
+        <div class="login-form-container">
+          <small class="small">First Name</small>
+          <label for="exampleInputEmail1" margin-left="0px"></label>
+          <input
+            type="text"
+            class="form-control"
+            name="first_name"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder=""
+          />
+        </div>
+
+        <div class="login-form-container">
+          <small class="small">Last Name</small>
+          <label for="exampleInputEmail1"></label>
+          <input
+            type="text"
+            class="form-control"
+            name="last_name"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder=""
+          />
+        </div>
+        <div class="login-form-container">
+          <small class="small">Email</small>
+          <label for="exampleInputEmail1"></label>
+          <input
+            type="email"
+            class="form-control"
+            name="user_name"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder=""
+          />
+        </div>
+
+        <div class="login-form-container">
+          <small class="small">Password</small>
+          <label for="exampleInputPassword1"></label>
+          <input
+            type="password"
+            class="form-control"
+            name="password"
+            id="exampleInputPassword1"
+            placeholder=""
+          />
+        </div>
+        <p class="black">
+          You agree to the Our Website User Agreement, Privacy Policy, and
+          Cookie Policy.
+        </p>
+        <button type="submit" class="btn btn-primary">Agree and Join</button>
+      </form>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
